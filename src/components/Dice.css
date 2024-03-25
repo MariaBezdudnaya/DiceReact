@@ -44,6 +44,9 @@ button:hover {
     background-color: #9b9696;
     color: #000000;
 }
+.buttonDisabled {
+    background-color: #9b9696;
+}
 
 .Dice__text {
     position: relative;
@@ -52,3 +55,18 @@ button:hover {
     color: #333333;
     font-weight: bolder;
 }
+
+.Active {
+    padding: 75px 100px;
+    height: 6em;
+    animation: shake 0.5s ease infinite; /* Применяем анимацию кубика */
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0); }
+  }
+  
